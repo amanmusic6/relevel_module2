@@ -1,0 +1,46 @@
+1. REST Architecture
+2. express.js
+    books and author API
+
+REST ->  REST is build over http protocol.
+         REPRESENTATIONAL STATELESS PROTOCAL
+         REPRESENTATIONAL STATE TRANSFER
+         url mapping for different api
+         REST is a way to create different different API which is independent of each other
+  1.stateless--> every api should be independent of eachother
+  2. Resource Resolution
+  3. status code/ Rest status code --> 200,400,500,300,100,....
+  4. http methods/rest methods  --> GET,PUT,....
+
+
+1. getAllBooks()  <----> /books
+2. getBookById(id)  <----> /books/:id
+3. getAllAuthor()  <----> /authors
+3. getAuthorById(id)  <----> /author/:id
+4. getAuthorByBookId(id)  <----> /book/:id/author
+
+-------------------------------------------------------------------------
+EXPRESS.js
+
+earlier: client---->http-----> middleware/function/callBack
+now :    client---->http-----> express-----> middleware/function/callBack
+
+ExpressJS also support REGEX
+ExpressJS is a layred Architecture
+
+queryParameters: /books?name=rich dad poor dad&id=2
+pathParameter:   /books/:id
+
+HomeWork
+.........
+1. Remove duplicates from  getAllAuthors
+2.apply filter to get books by name and by author.name
+3.update a book-->PUT
+
+..............................................
+Agenda..
+app.use(filter);
+    -username, password in headers
+    -filter
+app.all
+next parameter

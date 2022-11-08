@@ -1,0 +1,17 @@
+ORM -> object relational mapping
+
+database(rows) ------>engine Layer -------> ORM(sequelize) -------> javascript(objects)
+-> single row can be treated as single object
+
+javascript(findUser) -------> ORM(sequelize) --------> engine Layer -------> database(rows)
+
+-------------------------------------------------------------------------------------------------------
+
+MVC -> Model,View,Controller
+
+* whenever there is call to any particular API, that will be redirected to controller.
+* Controller holds all the business logic
+* View is DOM randering
+---------------------------------------------------------------------------------------------------------
+REST-> REST is a protocol for  exchange of the data, It is followed over http. resource creation is important, how we are creating the resource and how we are serving the resource.
+
